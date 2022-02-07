@@ -1,0 +1,118 @@
+
+
+\part{Version of Seasons}
+    
+    Compared to the PD/GL, our version of Seasons isn't much different. 
+    We fixed the bugs we may have encountered but we didn't add any card. 
+
+    \paragraph{Goals of the game}
+    
+        In order to win the game, the players have to gain more prestige points than the others.
+        To do that, they have cards, energies, crystals and invocations points at their disposition.
+        Each turn of the game, the player can choose a die which can give him a card, energies or other elements. They can use their invocation points, energies and crystals in order to summon cards which can have special effects on the game, or crystallize their energies which gives them crystals that can be converted in prestige points at the end of the turn.
+
+    \section{Progress of the game}
+    
+        \subsection{Distribution of the cards}
+            First of all, for the distribution of the cards at the beginning of the game, a certain amount of cards is given to each player. This amount is the result of the multiplication of the number of years by the number of cards per year given in the game parameters. After that, the players can choose how they want to organize their card for each year.
+            Once all of that is done, the processing of the game turns can begin.
+        
+        \subsection{Description of a turn of the game}
+            The first step of a turn is the choice of the dice. The dice are rolled and the players will choose the die they prefer one by one according to the turn order. One die will remain, its use will be described few lines below.
+            After every player got their die, they will execute their turn, still following the turn order.
+            Once the players all played their respective turn, the cursor on the board indicating the advancement of the game moves forward of a number of steps indicated on the remaining die from the first part of the turn.
+            At the end of each turn, the order shifts so the first players becomes the last one, the second player becomes the first one, etc.
+        
+        \subsection{Description of a turn of a player}
+            The turn of a player starts with the player receiving what the die he chose can give him. However, if the player possesses the card "Dice of Malice" on his board, he can decide to re-roll his die before receiving its advantages.
+            Then if his die indicates he can draw a card, the player can choose to use a bonus in order to draw a second card and choose which one he prefers between the two.
+            
+            After that he can choose the actions he will execute during his turn.
+            
+            \paragraph{Crystallize an energy}
+            The player can choose which energy he wants to crystallize if has any in his inventory. This action requires to have a die which gives the right to crystallize, or to have used a bonus with the same effect.
+            Depending on the season where is the cursor of the game, each energy return a different number of crystals. For example during the summer a fire energy return 1 crystals but a wind energy return 3 crystals.
+            
+            \paragraph{Summon a card}
+            The player summons a card if he can afford the price. The said price can come in the form of energies or crystals. Finally, the  player will also need to have enough space on his board to summon the card.
+            If the card has a direct effect, it is immediately applied. Otherwise the effect will be applied at the right time depending on the effect of the card.
+            
+            \paragraph{Use a Bonus}
+            The player can choose a bonus in a list of available bonuses. The one allowing to draw an additional card is not available as it can only be used in certain conditions.
+            Upon choosing the bonus "Crystallize", the player will be granted the right to crystallize at any time in the turn.
+            If he chooses the bonus "Gain Invocation Point", he will get one more invocation point.
+            If he decides to use the bonus "Change Energy", the player will have to choose an energy from his stock in order to exchange it for another energy he will have chosen.
+            
+            \paragraph{Activate a card}
+            If the player's board contains cards which effect requires to be activated by the player, and if the players can afford to activate at least one of them, he can do so by picking this action.
+            
+            \paragraph{Do nothing}
+            The player ends his turn by doing nothing.
+        
+        \subsection{End of the game}
+            When the cursor reaches the end of the last season of the last year, it's the end of the game. Each player's points will be calculated and the winner(s) will be decided.
+            
+            First of all, each crystal earned by the player gives him 1 prestige point.
+            Then each card on the player's sees its value (indicated on it) being added to the total score of the player. Some cards even have an effect that gives additional prestige points at the end of the game.
+            After that for every remaining card in the hand of the player, we remove 5 points of the calculated score.
+            And finally if the player used 1 bonus, we remove 5 points, if he used 2 bonuses, 12 points and if he used 3 bonuses, 20 points.
+            
+            In the end the winner is the player with the most prestige points among the players. It's to have several players with the same amount of crystals, in which case the game ends in a draw between all those players.
+        
+    \newpage
+    \section{Cards}
+    The implemented cards are the first thirty cards of the game.
+    
+    \begin{multicols}{2}
+    \begin{itemize}
+        \item Amulet Of Air
+        \item Amulet Of Fire
+        \item Amulet Of Earth
+        \item Amulet Of Water
+        \item Balance Of Ishtar
+        \item Staff of Spring
+        \item Temporal Boots
+        \item Purse Of Io
+        \item Divine Chalice
+        \item Syllas The Faithful
+        \item Figrim The Avaricious
+        \item Naria The Prophetess
+        \item Wondrous Chest
+        \item Beggar's Hom
+        \item Die Of Malice
+        \item Kairn The Destroyer
+        \item Amsug Longneck
+        \item Bespelled Grimoire
+        \item Ragfield's Helm
+        \item Hand Of Fortune 
+        \item Lewis Greyface
+        \item Runic Cube Of Eolis
+        \item Potion Of Power
+        \item Potion Of Dream
+        \item Potion Of Knowledge
+        \item Potion Of Life
+        \item Hourglass Of Time
+        \item Scepter Of Greatness
+        \item Olaf's Blessed Statue
+        \item Yjang's Forgotten Vase
+        
+    \end{itemize}
+    \end{multicols}
+
+\section{Game configuration}
+
+The game can be modified with different parameters described below:
+
+\begin{verbatim}
+-MCDepth N        : Depth for Monte Carlo(default: 12)
+-MCNbAction N     : Number of action for Monte Carlo (default: 17)
+-MCNbBranch N     : Number of branch for Monte Carlo (default: 6)
+-logger N         : Game logger (default: 0(false))
+-nbCardsPerYear N : Number of cards per year (default: 3)
+-nbCaseByYear N   : Number of Case by year (default: 3)
+-nbGame N         : Number of games (default: 1000)
+-nbPlayer N       : Number of player (default: 2, > 1 and < 5)
+-print N          : Print details of games (default: 1(true))
+-stats N          : Collect statistics about games (default: 0(false))
+-years N          : Number of year per game (default: 3)
+\end{verbatim}

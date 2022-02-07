@@ -1,0 +1,12 @@
+package core.ia.strategy.choose.card_to_summon;
+
+import core.cards.Card;
+import core.ia.Player;
+
+public interface StrategyChooseCardToSummon {
+
+    Card doChoose(Player player);
+
+    Card choose(Player player);
+
+}

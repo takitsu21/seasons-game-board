@@ -1,0 +1,449 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Amulette d'air",
+      "description": "Au moment où vous invoquez l'Amulette d'air, avancez votre pion du sorcier de 2 cases sur votre jauge d'invocation.",
+      "cost": {
+        "energy": [
+          "feather",
+          "feather"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 6,
+      "frequence": "invok"
+    },
+    {
+      "id": 2,
+      "name": "Amulette de feu",
+      "description": "Au moment où vous invoquez l'Amulette de feu, piochez 4 cartes pouvoir. Consultez-les et gardez-en une que vous placez dans votre main. Placez les 3 cartes restantes dans la defausse.",
+      "cost": {
+        "energy": [
+          "fire",
+          "fire"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 6,
+      "frequence": "invok"
+    },
+    {
+      "id": 3,
+      "name": "Amulette de terre",
+      "description": "Au moment où vous invoquez l'Amulette de terre, avancez votre pion du sorcier de 9 cases sur la piste des cristaux.",
+      "cost": {
+        "energy": [
+          "earth",
+          "earth"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 6,
+      "frequence": "invok"
+    },
+    {
+      "id": 4,
+      "name": "Amulette d'eau",
+      "description": "Au  moment  où  vous  invoquez  l'Amulette  d'eau,  recevez  4 energies  de  votre  choix  en  provenance  du  stock  et  placez-les sur l'Amulette d'eau.Les energies placees sur l'Amulette d'eau ne sont pas considerees  comme  faisant  partie  de  votre  reserve.  Elles  ne sont donc pas affectees par les effets du Coffret merveilleux, de la Corne du mendiant, de l'Elementaire d'air, de la Lanterne de Xidit, de Lewis Grisemine, de la Potion de reves, de la Potion de vie et du Traite maudit d'Arus.",
+      "cost": {
+        "energy": [
+          "water",
+          "water"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 6,
+      "frequence": "invok"
+    },
+    {
+      "id": 5,
+      "name": "Balance d'Ishtar",
+      "description": "Pour  activer  la  Balance  d'Ishtar,  defaussez  4  energies  iden-tiques  en  provenance  de  votre  reserve,  afi n  de  les  cristalliser en 12 cristaux. Avancez alors votre pion du sorcier de 12 cases sur la piste des cristaux.La Balance d'Ishtar peut etre activee meme si vous ne disposez pas de l'action de cristallisation.Si  vous  possedez  une  Bourse  d'Io,  recevez  16  cristaux  au  lieu  de  12  a chaque fois que vous activez la Balance d'Ishtar.",
+      "cost": {
+        "energy": [],
+        "crystal": 2,
+        "players": false
+      },
+      "points": 4,
+      "frequence": "activation"
+    },
+    {
+      "id": 6,
+      "name": "Bâton du printemps",
+      "description": "a  chaque  fois  que  vous  invoquez  une  carte  pouvoir,  avancez votre pion du sorcier de 3 cases sur la piste des cristaux. L'effet  du  Bâton  du  printemps  n'affecte  que  les  cartes  pouvoir  invoquees depuis la main du joueur. Les cartes pouvoir invoquees par l'intermediaire d'autres cartes comme le Calice divin, l'Orbe de cristal ou la Potion de reves ne rapportent donc aucun cristal au possesseur du Bâton de printemps.",
+      "cost": {
+        "energy": [
+          "earth",
+          "earth",
+          "earth"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 9,
+      "frequence": "permanent"
+    },
+    {
+      "id": 7,
+      "name": "Bottes temporelles",
+      "description": "Les  Bottes  temporelles  n'ont  pas  de  coût  d'invocation  et peuvent donc etre invoquees gratuitement.Au moment où vous invoquez les Bottes temporelles, avancez ou reculez d'une a trois cases le marqueur saison sur la roue des saisons.Si  les  Bottes  temporelles  font  reculer  le  marqueur  saison  de  l'hiver  a l'automne : - reculez le marqueur annee d'une case. - conservez toutes les cartes pouvoir que vous avez en main.  Si les Bottes temporelles vous amenent a changer de saison (en avançant ou en reculant le marqueur saison), les cartes affectees par le change-ment  de  saison  comme  Figrim  l'avaricieux  ou  le  Sablier  du  temps  font  immediatement effet.Si les Bottes temporelles amenent a depasser la fin de la troisieme an-nee de jeu en cours de manche, terminez la manche en cours avant de mettre un terme a la partie.",
+      "cost": {
+        "energy": [],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 8,
+      "frequence": "invok"
+    },
+    {
+      "id": 8,
+      "name": "Bourse d'Io",
+      "description": "a chaque fois que vous cristallisez une energie, avancez votre pion du sorcier d'une case sur la piste des cristaux et ce, en plus du gain de cristaux obtenu grâce a la cristallisation.L'effet de la Bourse d'Io affecte les effets de la Balance d'Ishtar et de la Potion de vie.a  l'inverse,  l'effet  de  la  Bourse  d'Io  n'a  aucun  impact  sur  l'effet  du Chaudron glouton et du Crâne de dragon.",
+      "cost": {
+        "energy": [
+          "fire",
+          "feather"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 6,
+      "frequence": "permanent"
+    },
+    {
+      "id": 9,
+      "name": "Calice divin",
+      "description": "Au  moment  où  vous  invoquez  le  Calice  divin,  piochez  4  cartes pouvoir  et  invoquez-en  une  gratuitement,  sans  payer  son  coût d'invocation. Cette carte pouvoir ainsi invoquee ne declenche pas l'effet  de  l'Arcano  Sangsue,  du  Bâton  du  printemps  et  du  Vase oublie d'Yjang. Placez les 3 cartes restantes dans la defausse. Vous  devez  posseder  une  jauge  d'invocation  suffisante  pour  pouvoir invoquer cette nouvelle carte. Dans le cas contraire, la carte piochee est defaussee.",
+      "cost": {
+        "energy": [
+          "feather",
+          "fire",
+          "water",
+          "earth"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 10,
+      "frequence": "invok"
+    },
+    {
+      "id": 10,
+      "name": "Syllas le fidele",
+      "description": "Au  moment  où  vous  invoquez  Syllas  le  fidele,  chaque  adversaire doit sacrifier une carte pouvoir en jeu qu'il possede.",
+      "cost": {
+        "energy": [
+          "fire",
+          "fire",
+          "fire"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 14,
+      "frequence": "invok"
+    },
+    {
+      "id": 11,
+      "name": "Figrim l'Avaricieux",
+      "description": "Suivant que vous jouez a 2, 3 ou 4 joueurs, le coût d'invocation de Figrim l'avaricieux n'est pas le meme.a chaque fois que l'on change de saison, tous vos adversaires doivent vous donner 1 cristal. Ils reculent d'une case leur pion du  sorcier  sur  la  piste  des  cristaux.  Avancez  votre  pion  du sorcier  sur  la  meme  piste  d'autant  de  cases  que  de  cristaux ainsi gagnes.Un  adversaire  n'ayant  aucun  cristal  n'est  pas  concerne  par  l'effet  de Figrim l'Avaricieux.",
+      "cost": {
+        "energy": [],
+        "crystal": 3,
+        "players": true
+      },
+      "points": 7,
+      "frequence": "permanent | invok"
+    },
+    {
+      "id": 12,
+      "name": "Naria la prophetesse",
+      "description": "Au moment où vous invoquez Naria la prophetesse, piochez autant cartes que de joueurs (vous y compris). Choisissez-en une et placez-la dans votre main. Ensuite, parmi les cartes restantes, distribuez-en une de votre choix a chacun de vos adversaires.",
+      "cost": {
+        "energy": [],
+        "crystal": 3,
+        "players": false
+      },
+      "points": 8,
+      "frequence": "invok"
+    },
+    {
+      "id": 13,
+      "name": "Coffret merveilleux",
+      "description": "a chaque fois que vous possedez 4 energies ou plus dans votre reserve a la fin de la manche, recevez 3 cristaux. Avancez alors de 3 cases votre pion du sorcier sur la piste des cristaux.L'effet  du  Coffret  merveilleux  prend  en  compte  les  energies placees  sur  le  Grimoire  ensorcele  qui  font  partie  de  votre reserve. A l'inverse, les energies presentes sur l'Amulette d'eau ou le Chaudron glouton ne font pas partie de votre reserve et n'affectent donc pas le Coffret merveilleux.",
+      "cost": {
+        "energy": [
+          "water",
+          "fire"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 4,
+      "frequence": "permanent"
+    },
+    {
+      "id": 14,
+      "name": "Corne du mendiant",
+      "description": "a chaque fois que vous possedez 1 energie ou moins dans votre reserve a la fin de la manche, recevez 1 energie de votre choix en provenance du stock et placez-la dans votre reserve. L'effet de la Corne du mendiant prend en compte les energies placees  sur  le  Grimoire  ensorcele,  qui  font  partie  de  votre reserve. a l'inverse, les energies presentes sur l'Amulette d'eau ou le Chaudron glouton ne font pas partie de votre reserve et n'affectent pas la Corne du mendiant.",
+      "cost": {
+        "energy": [
+          "earth",
+          "feather"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 8,
+      "frequence": "permanent"
+    },
+    {
+      "id": 15,
+      "name": "De de la malice",
+      "description": " Le  De  de  la  malice  n'a  pas  de  coût  d'invocation  et  peut  donc etre invoque gratuitement.a chaque fois que vous activez le De de la malice, relancez le de des saisons que vous avez choisi et ce, avant d'avoir effectue ses  actions.  Ne  prenez  en  compte  que  le  nouveau  de  pour effectuer vos actions du tour.",
+      "cost": {
+        "energy": [],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 8,
+      "frequence": "activation"
+    },
+    {
+      "id": 16,
+      "name": "Kairn le destructeur",
+      "description": "Pour activer Kairn le destructeur, defaussez une energie de votre choix  en  provenance  de  votre  reserve.  Chaque  adversaire  recule alors de 4 cases son pion du sorcier sur la piste des cristaux.",
+      "cost": {
+        "energy": [
+          "feather",
+          "feather",
+          "feather"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 9,
+      "frequence": "activation"
+    },
+    {
+      "id": 17,
+      "name": "Amsug Longcoup",
+      "description": "Au moment où vous invoquez Amsug Longcoup, chaque joueur (vous y compris) renvoie dans sa main l'une de ses cartes objet magique deja en jeu. Un joueur ne possedant pas d'objet magique invoque n'est pas concerne par l'effet d'Amsug Longcoup.",
+      "cost": {
+        "energy": [
+          "water",
+          "feather"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 8,
+      "frequence": "invok"
+    },
+    {
+      "id": 18,
+      "name": "Grimoire ensorcele",
+      "description": "Au  moment  où  vous  invoquez  le  Grimoire  ensorcele,  recevez 2  energies  de  votre  choix  en  provenance  du  stock,  que  vous placez dans votre reserve.Tant  que  le  Grimoire  ensorcele  est  en  jeu,  il  augmente  la capacite  de  votre  reserve,  lui  permettant  de  stocker  jusqu'a 10 energies au lieu de 7. Les energies placees sur le Grimoire ensorcele sont considerees comme faisant  partie  de  votre  reserve.  Elles  sont  donc  affectees  par  l'effet  du Coffret merveilleux, de la Corne du mendiant, de l'Elementaire d'air, de la Lanterne de Xidit, de Lewis Grisemine, de la Potion de reves, de la Potion de vie et du Traite maudit d'Arus. Il  est  possible  a  tout  moment  de  deplacer  les  energies  presentes  sur votre Grimpoire ensorcele vers votre reserve et vice-versa.Posseder  deux  Grimoires  ensorceles  ne  permet  pas  d'avoir  jusqu'a 13 energies dans sa reserve. La limite est de 10 energies maximum. Un joueur ne peut donc pas entreposer d'autres energies sur le deuxieme Grimoire ensorcele.",
+      "cost": {
+        "energy": [
+          "water",
+          "earth"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 8,
+      "frequence": "invok"
+    },
+    {
+      "id": 19,
+      "name": "Heaume de Ragfield",
+      "description": "Si vous etes le joueur ayant en jeu strictement le plus de cartes pouvoir  a  la  fin  de  la  partie,  avancez  votre  pion  du  sorcier  de  20 cases sur la piste des cristaux.",
+      "cost": {
+        "energy": [
+          "feather",
+          "feather",
+          "feather"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 10,
+      "frequence": "permanent"
+    },
+    {
+      "id": 20,
+      "name": "Main de la fortune",
+      "description": "a  chaque  fois  que  vous  invoquez  une  carte  pouvoir,  le  coût \nde  cette  derniere  est  reduit  d'1  energie  de  votre  choix.  Le \ncoût des prochaines cartes invoquees ne peut neanmoins etre \ninferieur a 1 energie. \n  La Main de la fortune ne diminue en aucun cas les coûts d'activation de \n\nvos cartes pouvoir (comme celui de l'Orbe de cristal par exemple).\n  La Main de la fortune affecte le coût d'invocation de l'Amulette elementaire.",
+      "cost": {
+        "energy": [
+          "feather",
+          "fire",
+          "earth"
+        ],
+        "crystal": 3,
+        "players": false
+      },
+      "points": 9,
+      "frequence": "permanent"
+    },
+    {
+      "id": 21,
+      "name": "Lewis Grisemine",
+      "description": "Au  moment  où  vous  invoquez    Lewis  Grisemine,  recevez  en \nprovenance du stock exactement le meme nombre et le meme \ntype  d'energies  que  l'adversaire  de  votre  choix  possede  dans \nsa reserve. Placez les energies ainsi reçues dans votre reserve.\n  Les  energies  copiees  chez  un  adversaire  ne  sont  pas  volees,  ce  dernier \n\nles conserve.\n  Lewis Grisemine ne copie pas les energies placees sur l'Amulette d'eau \n\nou le Chaudron glouton. En revanche, il peut copier les energies placees \nsur un Grimoire ensorcele.",
+      "cost": {
+        "energy": [
+          "fire",
+          "feather"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 6,
+      "frequence": "invok"
+    },
+    {
+      "id": 22,
+      "name": "Cube runique d'Eolis",
+      "description": "Le Cube runique d'Eolis n'a aucun effet mais rapporte 30 points \nde prestige en fin de partie.",
+      "cost": {
+        "energy": [],
+        "crystal": 20,
+        "players": false
+      },
+      "points": 30,
+      "frequence": "permanent"
+    },
+    {
+      "id": 23,
+      "name": "Potion de puissance",
+      "description": "Pour activer la Potion de puissance, sacrifiez-la afin de piocher \n\nune carte pouvoir et d'avancer de 2 cases votre pion du sorcier \nsur votre jauge d'invocation.\n  Vous etes oblige de conserver en main la carte pouvoir \npiochee. En aucun cas vous ne pouvez la defausser. ",
+      "cost": {
+        "energy": [
+          "fire",
+          "fire"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 0,
+      "frequence": "activation"
+    },
+    {
+      "id": 24,
+      "name": "Potion de reves",
+      "description": "Pour activer la Potion de reves, sacrifiez-la et defaussez toutes \n\nvos  energies  afin  d'invoquer  gratuitement  une  carte  pouvoir \nde votre main.\n  Si  un  joueur  ne  possede  aucune  energie,  il  peut  utiliser  la \nPotion de reves. \n  Si un joueur active la Potion de reves, les energies placees sur l'Amulette \n\nd'eau ou sur le Chaudron glouton ne sont pas defaussees, au contraire \ndes energies placees sur le Grimoire ensorcele.\n  La carte invoquee par la Potion de reves n'est pas affectee par les effets \nde l'Arcano Sangsue, du Bâton de printemps et du Vase oublie d'Yjang.",
+      "cost": {
+        "energy": [
+          "feather",
+          "feather"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 0,
+      "frequence": "activation"
+    },
+    {
+      "id": 25,
+      "name": "Potion de savoir",
+      "description": "Pour  activer  la  Potion  de  savoir,  sacrifiez-la  afin  de  recevoir \n5  energies  de  votre  choix  en  provenance  du  stock.  Placez  ces \nenergies dans votre reserve.",
+      "cost": {
+        "energy": [
+          "water",
+          "water"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 0,
+      "frequence": "activation"
+    },
+    {
+      "id": 26,
+      "name": "Potion de vie",
+      "description": "Pour  activer  la  Potion  de  vie,  sacrifiez-la  afin  de  cristalliser \nchacune  de  vos  energies  en  4  cristaux.  Avancez  votre  pion \ndu  sorcier  d'autant  de  cases  que  necessaire  sur  la  piste  des \ncristaux.\n  On peut activer la Potion de vie sans posseder l'action de cristallisation. \n  Les energies placees sur l'Amulette d'eau ou le Chaudron glouton ne sont \n\npas  affectees  par  l'effet  de  la  Potion  de  vie,  au  contraire  des  energies \nplacees sur le Grimoire ensorcele.\n  On ne peut pas continuer a cristalliser apres avoir active la Potion de vie.\n  La Potion de vie est affectee par l'effet de la Bourse d'Io.",
+      "cost": {
+        "energy": [
+          "earth",
+          "earth"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 0,
+      "frequence": "activation"
+    },
+    {
+      "id": 27,
+      "name": "Sablier du temps",
+      "description": "a chaque fois que l'on change de saison, recevez une energie \nde  votre  choix  en  provenance  du  stock.  Placez  l'energie  dans \nvotre reserve.\n  Si un changement de saison a lieu, recevez votre energie a la fin \nde la manche lors de laquelle le changement de saison a lieu.",
+      "cost": {
+        "energy": [
+          "feather",
+          "water",
+          "fire",
+          "earth"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 6,
+      "frequence": "permanent"
+    },
+    {
+      "id": 28,
+      "name": "Sceptre de grandeur",
+      "description": "Au moment où vous invoquez le Sceptre de grandeur, avancez \n\nde 3 cases votre pion du sorcier sur la piste des cristaux pour \nchaque autre objet magique en jeu que vous possedez.\n  Si vous invoquez un deuxieme Sceptre de grandeur, le premier \nSceptre  de  grandeur  (que  vous  possedez)  compte  dans  le \ndecompte des objets magiques en jeu.",
+      "cost": {
+        "energy": [
+          "water",
+          "feather",
+          "earth",
+          "fire"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 6,
+      "frequence": "invok"
+    },
+    {
+      "id": 29,
+      "name": "Statue benie d'Olaf",
+      "description": "Au moment où vous invoquez la Statue benie d'Olaf, avancez votre \npion du sorcier de 20 cases sur la piste des cristaux.",
+      "cost": {
+        "energy": [
+          "water",
+          "water",
+          "water"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 0,
+      "frequence": "invok"
+    },
+    {
+      "id": 30,
+      "name": "Vase oublie d'Yjang",
+      "description": "a chaque fois que vous invoquez une carte pouvoir, recevez une \nenergie  de  votre  choix  en  provenance  du  stock.  Placez  cette \nenergie dans votre reserve.\n  L'effet  du  Vase  oublie  d'Yjang  n'affecte  que  les  cartes  pouvoir \ninvoquees depuis la main du joueur. Les cartes pouvoir invoquees \npar l'intermediaire d'autres cartes comme le Calice divin, l'Orbe de \ncristal ou la Potion de reves ne vous rapportent donc aucune energie.",
+      "cost": {
+        "energy": [
+          "fire",
+          "earth",
+          "water"
+        ],
+        "crystal": 0,
+        "players": false
+      },
+      "points": 6,
+      "frequence": "permanent"
+    }
+  ]
+}

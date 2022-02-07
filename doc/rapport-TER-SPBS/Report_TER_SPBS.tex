@@ -1,0 +1,69 @@
+\documentclass{rapport}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{pifont} % Pour les symboles appelés par la macro \ding
+\usepackage{url} % Comme son nom l'indique, pour les url...
+
+\usetikzlibrary{positioning} % Bibliothèque tikz pour positionner des nœuds relativement à d'autres
+
+\usepackage[colorlinks, citecolor=red!60!green, linkcolor=blue!60!green, urlcolor=magenta]{hyperref} % Pour que les liens soient cliquables. Les options permettent de mettre les liens en couleur.
+
+\usepackage{algorithm}
+\usepackage{algo}
+\usepackage{colorationSyntaxique}
+\usepackage[linguistics]{forest}
+\usepackage{tikz}
+\usepackage{tabto}
+\usepackage[toc,page]{appendix}
+\usepackage{geometry}
+\setlength{\parindent}{0pt}
+
+\englishTitlePage % Décommenter pour une page de titre en anglais
+
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{\markboth{\thesection.\ #1}{}}
+\fancyfoot{}
+
+\fancyhead[LE]{\textsl{\leftmark}}
+\fancyhead[RE, LO]{\textbf{\thepage}}
+\fancyhead[RO]{\textsl{\rightmark}}
+
+\def\Latex{\LaTeX\xspace}
+\def\etc{\textit{etc.}}
+
+
+\title{An AI for Seasons}
+\author{Batisse Dylann, Pietrzak Raphaël, Sabatier Juliette, Schmied Margaux}
+\supervisor{Pelleau Marie, Renevier Philippe}
+\date{Second semester of the year 2021-2022}
+
+
+\begin{document}
+
+    \maketitle
+    
+    \clearpage
+    \tableofcontents
+    
+    \newpage
+    \begin{abstract}
+    The objective of the TER project was to develop different types of AI. We decided to implement AIs based on the Strategy pattern, an adaptive strategy and an AI based on the Monte Carlo algorithm.\\
+    We will start with a reminder of the rules and a short description of the version of the Seasons we used. Then we'll describe the implementation of our AIs associated with they performances and the thoughts behind their development.
+    \end{abstract}
+    
+    \include{rapport/sections/Version_of_seasons}
+    
+    \include{rapport/sections/Guarantee_AI}
+
+    \include{rapport/sections/Ambitious_AI}
+
+    \include{rapport/sections/Issues_encountered}
+    
+
+    \include{rapport/sections/Summary}
+    
+
+    \include{rapport/sections/Annexe_compose}
+
+ 
+\end{document}

@@ -1,0 +1,183 @@
+
+
+\appendix
+
+\begin{appendices}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+
+\section{Compose Raph appendix}\label{compose_raph_appendix}
+
+\paragraph{ChooseCardForInitHand}
+First things first, the way it chooses the cards to initialize its hand is the one used by our AI that tries to summon as many cards as possible, because chooses the cards that are easier to summon for the beginning of the game, thus guaranteeing a better start.
+
+\paragraph{ChooseBonus}
+When it's time to choose a bonus, it checks if it needs more invocation points, in which case it try to use the bonus to get more. If it needs more or different energies, it will try to pick the bonus to exchange an energy, and if it has less crystals than anyone, it will try to pick the bonus that allows him to crystallize. Else, it won't pick any.
+
+\paragraph{ChooseCardComeBackInHand}
+If it has to take a card back into its hand, the AI will check if it has a lot of resources or if it's behind the others score-wise, and if so it will take back the card that would've given less points. However if it doesn't have many resources or if the game is near its end, it will choose a card that is easy to summon back.
+
+\paragraph{ChooseCardNariaLaProphetesse}
+When using "Naria the Prophetess", it will always try to pick the card that would give it more points at the end.
+
+\paragraph{ChooseCardToDelete}
+If an opponent uses "Syllas the Faithful", the AI will first choose to sacrifice cards that would inflict a penalty to the opponents. If it doesn't have any, it will try to delete a card that doesn't give much points, and finally it will try to remove a card that isn't part of a combo. Now that I think about it, it would've made more sense to make it work the other way around.
+
+\paragraph{ChooseCardToSummon}
+When summoning a card, it will try to summon cards that can give a lot of points if it's behind the other players and if the game is about to end. However, if the game's just begun, it will attempt to summon cards applying penalties to the other players, as these cards often work on the long run, it would be the best way to exploit them. These cards would also be summoned if the AI sees it has less crystals than the others, to steal some. If the game isn't at any particular point it will try to use cards with permanent effects, then cards that can be activated and then cards that would let him summon even more cards.
+
+\paragraph{ChooseCardToSummonForFree}
+It follows the same logic when summoning a card for free.
+
+\paragraph{ChooseCardsToActivate}
+When activating a card, it will try to activate cards that would help it summon more cards if it has too many in its hand, If it notices it has less crystals than the others, it will try to activate "Kairn The Destroyer" in order to steal crystals. If it realizes it has too many energies, not enough crystals and little time before the game ends, it will try to activate cards that would help him crystallizing energies. In other cases it will simply try to activate combos of cards.
+
+\paragraph{ChoosePlayerAction}
+One of the most important choice an AI has to make is the set of actions it will perform during its turn. The first thing it will check is if it has one or more cards with a high value in its hand, and it will pick the action to summon if so. It will do the same if it decides it has too many cards in its hand and if it has enough resources to potentially summon something. If it needs crystals and it has a lot of energies, it will try to crystallize if it can.
+\\\\
+Thinking about all the possible situations takes some time and this AI couldn't be totally completed, some types of strategy are missing and some aren't as good as they should be, as it can happen that a context is verified although it would have been wiser to check another one first.
+
+
+\section{Compose Dyl appendix}\label{appendix:compose_dyl_appendix}
+
+\paragraph{ChooseBonus}
+For this strategy we first try to use a bonus if we need to invoke a card, then we check if we need energies to activate a card.
+
+\paragraph{ChooseCardBetweenMultipleToGet}
+When we need to choose a card, we check if the card can create some combos with our hand. If no combo have been found, we choose the card that has the most prestige points. If we can't find any interesting card, we move on to get a card that can helps us getting more cards and finally a card that can be activated.
+
+\paragraph{ChooseCardComeBackInHand}
+The player will first try to take a card which would takes him back in time like the \textit{Temporal Boots} if it's the last year of the game. Else he'll take a card that inflicts a penalty on the other players or a card which gives the smallest amount prestige points.
+
+\paragraph{ChooseCardForInitHand}
+The player tries to create the best combo, but if he can't, he'll take the cards that cost the least
+
+\paragraph{ChooseCardNariaLaProphetesse}
+The player will choose the card that has the smallest cost for himself if the context last year is verified. If not, he'll choose the best combos according to our hand, a permanent card if no combo could be found and in first year context, a card that can be activated if it's the middle of the game and then he'll take the \textit{Temporal Boots} if there is one available.
+
+\paragraph{ChooseCardToDelete}
+The player will first look for a card with a permanent effect on the board, if none is found then he'll look for a card that could be activated, then the card that would give the least prestige points, or \textit{Temporal Boots} if there is one and finally we delete a penalty card.
+
+\paragraph{ChooseCardToSummon}
+\label{card_to_summon}The player will try to summon the card that would earn him the most prestige points. If a minimal amount of prestige point is not respected, he'll try to invoke the card that costs the least. Then a permanent card if context middle game is verified, a card that can be activated, then a penalty card against the other players, a card with combos if no penalty card is found and finally \textit{Temporal Boots} if we have it.
+
+\paragraph{ChooseCardToSummonForFree}
+This strategy is the same as the basic one \ref{card_to_summon}.
+
+\paragraph{ChooseCardToActivate}
+The player will try to activate \textit{Temporal Boots} if the game is in its last year, if none is found he'll try to activate the card that would help him get more cards and then activate a card with good combos with what he has in his hand.
+
+\paragraph{ChoosePlayerEnergyToCopy}
+We try to copy energy from the player that match the best energies for a permanent card in our hand if we are in the first year, if not we copy the energies that match the best energies for a card that cost the least. Finally if none of these are respected we try to copy the energies from a player that match an activable card in our hand.
+
+\paragraph{ChooseDice}
+The player will choose a die to invoke more card if the game is either in year 1 or year 2, if we are in the last year he'll choose one to crystallize and then take a die which would allow him to invoke the card that would give him the most prestige points.
+
+\paragraph{ChooseEnergyToCrystallize}
+The player will choose to crystallize an energy if we are in the last year and his hand is empty.
+
+\paragraph{ChooseEnergyToReduce}
+The player will choose an energy such that he could invoke more cards.
+
+\paragraph{ChooseEnergyToThrow}
+The player will remove the energies that do not match the energies needed for the cards in his hand. If none is found he'll throw the energies required for the card that costs the least, then the energies for the card that has the least combo and finally the energy that would be worth less if he'd want to crystallize it.
+
+\paragraph{ChooseNbDeplacementSeason}
+The player will make a decision according to ChooseGoToTheNextSeason, ChooseGoToThePreviousSeason and ChooseStayInTheSeason.
+
+\paragraph{ChooseStayInTheSeason}
+The player will choose to stay in the season if his hand is not empty.
+
+\paragraph{ChooseGoToTheNextSeason}
+The player will choose to go in the next season if his hand is empty.
+
+\paragraph{ChooseGoToThePreviousSeason}
+The player will choose to stay in the season if his hand is not empty.
+
+\paragraph{ChoosePlayerAction}
+Player will try to choose the action to invoke more card, otherwise it will take the activable cards.
+
+\paragraph{ChooseSimilarEnergyToDelete}
+The player will choose an energy that is not required to summon the card that costs the least, or a card to summon even more cards. If no energy is deleted after with that condition, he'll choose the energy that aren't needed for the cards that can be activated and finally for \textit{Temporal boots}.
+
+\paragraph{ChooseToKeepDrawnCard}
+The player will prioritize the permanent cards, the cards that can be activated, the penalty cards, the cards that can create a combo and \textit{Temporal boots}, in that order from the highest priority to the lowest.
+
+\paragraph{ChooseUseDeDeLaMalice}
+If the die is not satisfying, in other words if the player had to choose his die by default, he'll use Die of Malice.
+
+\section{Compose Marg appendix}\label{appendix:compose_marg}
+
+    \paragraph{ChooseBonus}
+    If the player needs invocation points, he'll take the invocation bonus. He'll pick the crystallization bonus if his energy stock is full, and in other cases, he won't pick any bonus.
+    
+    \paragraph{ChooseCardBetweenMultipleToGet}
+    If the choice is made during the first year, the player will take the card with the highest value. If it's during the second year, he'll take the best one to create a combo, and else he'll take the easiest card to summon.
+    
+    \paragraph{ChooseCardComeBackInHand}
+    The player will look for cards that have an effect upon invocation. If he can't find any, he'll pick the easiest card to summon.
+
+    \paragraph{ChooseCardForInitHand}
+    The player organizes his hand in order to create the best combos.
+    
+    \paragraph{ChooseCardNariaLaProphetesse}
+    The player will distribute the cards such that the players with more cards will receive the toughest cards to summon. The players with less cards will receive cards that are easier to summon.
+    
+    \paragraph{ChooseCardToDelete}
+    The player will first try to delete cards with a permanent effect. If he can't find any and if there's a card with a value over 10, he'll try to delete the card with the lowest value. Else he'll choose a card that can be activated.
+    
+    \paragraph{ChooseCardToSummon}
+    During the first year, the player will try to summon cards with permanent effects. Then he'll try to summon \textit{Temporal Boots}, penalty cards or cards with the highest value, in order of priority.
+    
+    \paragraph{ChooseCardToSummonForFree}
+    The player follows the same logic than for ChooseCardToSummon.
+
+    \paragraph{ChooseCardToActivate}
+    If he can, the player will activate cards that would help him summon more cards. Otherwise, if it's the middle of the game, he'll try to activate a card that applies a penalty to an opponent, else he'll try to activate a card with a good combo available.
+    
+    \paragraph{ChoosePlayerEnergyToCopy}
+    The player will look for the player with the energy stock that would fit the most to summon valuable cards, or to summon cards that would create a great combo.
+
+    
+    \paragraph{ChooseDice}
+    If it is the first or second year, and if the player needs invocation points, he'll choose a die that gives invocation point. If it's the last year, he'll take the die which allows him to crystallize. If none of the previous context is verified, he'll take the die with the best energies in order to summon the most valuable card.
+    
+    \paragraph{ChooseEnergyToCrystallize}
+    The player crystallizes the most expensive energy.
+    
+    \paragraph{ChooseEnergyToGet}
+    The player chooses the best energy to summon his most valuable card.
+
+    \paragraph{ChooseEnergyToReduce}
+    The player chooses an energy he needs but doesn't possess, or just a random energy.
+    
+    \paragraph{ChooseEnergyToThrow}
+    The player chooses an energy that isn't required to summon a valuable card.
+
+    \paragraph{ChooseNbDeplacementSeason}
+    The player will make a decision according to ChooseGoToTheNextSeason, ChooseGoToThePreviousSeason and ChooseStayInTheSeason.
+    
+    \paragraph{ChooseStayInTheSeason}
+    The player will choose to stay in the season if his hand is not empty.
+    
+    \paragraph{ChooseGoToTheNextSeason}
+    The player will choose to go in the next season if his hand is empty.
+    
+    \paragraph{ChooseGoToThePreviousSeason}
+    The player will choose to stay in the season if his hand is not empty.
+
+    \paragraph{ChoosePlayerAction}
+    If we're in the last season of the last year he'll try to crystallize his energies, else he'll choose to summon, use a bonus or activate a card, in this order of priority.
+    
+    \paragraph{ChooseSimilarEnergyToDelete}
+    The player deletes the most useless energy to summon a card.
+    
+    \paragraph{ChooseToKeepDrawnCard}
+    If the card is useful to summon more cards, or if it's not the last year and his hand is empty he'll keep the card no matter what.
+    
+    \paragraph{ChooseToUseBonusCard}
+    The player doesn't use his bonuses.
+    
+    \paragraph{ChooseUseDeDeLaMalice}
+    If the die is not satisfying, in other words if the player had to choose his die by default, he'll use Die of Malice.
+
+\end{appendices}
