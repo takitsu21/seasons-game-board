@@ -20,6 +20,18 @@
     - Sur les méthodes de composition
     - Sur la méthode monte-carlo
 
+
+# Contributors
+
+[Dylann B](https://github.com/takitsu21)
+
+[Margaux Schmied](https://github.com/margauxschmied)
+
+[Juliette Sabatier](https://github.com/JulietteSabatier)
+
+[Raphaël P](https://github.com/Ninjabsent)
+
+
 # Journal de bord
 
 ## Lundi 29/11/2021 - Mercredi 1/12/2021
